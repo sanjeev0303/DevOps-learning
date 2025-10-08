@@ -257,6 +257,58 @@ LOG_LEVEL=info
 - Structured logging with Winston
 - Request logging with Morgan
 
+## 🚀 CI/CD with GitHub Actions
+
+This project includes three GitHub Actions workflows for continuous integration and deployment:
+
+### 📋 Available Workflows
+
+1. **Lint and Format** (`lint-and-format.yml`)
+   - Triggers: Push/PR to `main` and `staging` branches
+   - Runs ESLint and Prettier checks
+   - Provides clear feedback and fix suggestions
+
+2. **Tests** (`tests.yml`)
+   - Triggers: Push/PR to `main` and `staging` branches
+   - Runs Jest test suite with experimental VM modules
+   - Uploads coverage reports as artifacts (30-day retention)
+   - Generates detailed test summaries
+
+3. **Docker Build and Push** (`docker-build-and-push.yml`)
+   - Triggers: Push to `main` branch or manual workflow dispatch
+   - Builds multi-platform Docker images (linux/amd64, linux/arm64)
+   - Pushes to Docker Hub with multiple tags
+   - Uses GitHub Actions cache for efficiency
+
+### 🔐 Required Secrets
+
+To use the Docker workflow, configure these repository secrets:
+
+```
+DOCKER_USERNAME     # Your Docker Hub username
+DOCKER_PASSWORD     # Your Docker Hub password or access token
+```
+
+Optionally for tests:
+```
+TEST_DATABASE_URL   # Test database connection string
+```
+
+### 🏷️ Docker Image Tags
+
+The Docker workflow creates the following tags:
+- `latest` (for main branch)
+- `main-<commit-sha>` (branch with commit SHA)
+- `prod-YYYYMMDD-HHmmss` (production timestamp)
+
+### 📊 Workflow Features
+
+- **Caching**: Node.js dependencies and Docker layers are cached
+- **Multi-platform**: Docker images built for AMD64 and ARM64
+- **Annotations**: Clear success/failure messages with actionable suggestions
+- **Artifacts**: Test coverage reports available for download
+- **Summaries**: Detailed GitHub step summaries for each workflow
+
 ## 🛠️ Troubleshooting
 
 ### Common Issues
