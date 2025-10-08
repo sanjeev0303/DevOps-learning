@@ -48,3 +48,166 @@
 {"level":"info","message":"::1 - - [08/Oct/2025:03:33:11 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 313 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
 {"level":"info","message":"User signed out successfully","service":"DevOps learning"}
 {"level":"info","message":"::1 - - [08/Oct/2025:03:34:35 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:09:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:09:24 +0000] \"GET /api HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps learning"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/api","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:12:22 +0000] \"GET /api HTTP/1.1\" 200 36 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:12:32 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:05 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:06 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:07 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:08 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:09 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:10 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:10 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:11 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:11 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:11 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:13 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:13 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:14 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:14 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:14 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:14 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:15 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:15 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:15 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:15 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:15 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:16 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:16 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:16 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:16 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:17 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:17 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:17 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:17 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:17 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:18 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:18 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:18 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:18 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:18 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:18 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:19 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:19 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:19 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:19 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:19 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:20 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:20 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:20 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:20 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:20 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:20 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:21 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:21 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:21 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:21 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:21 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:22 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:23 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:23 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:23 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:23 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:23 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:24 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:24 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:24 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:24 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:24 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:25 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Development tool request allowed","path":"/health","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:14:25 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:16:23 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:16:26 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:16:27 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:16:28 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:05:16:28 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps learning"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/health","service":"DevOps learning","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}
