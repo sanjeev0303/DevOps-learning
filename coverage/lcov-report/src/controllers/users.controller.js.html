@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.53% </span>
+                <span class="strong">10.93% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/182</span>
+                <span class='fraction'>21/192</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.53% </span>
+                <span class="strong">10.93% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/182</span>
+                <span class='fraction'>21/192</span>
             </div>
         
             
@@ -245,7 +245,17 @@
 <a name='L180'></a><a href='#L180'>180</a>
 <a name='L181'></a><a href='#L181'>181</a>
 <a name='L182'></a><a href='#L182'>182</a>
-<a name='L183'></a><a href='#L183'>183</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -371,8 +381,18 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -431,14 +451,14 @@
 import {
   getUserSchema,
   updateUserRequestSchema,
-  deleteUserRequestSchema
+  deleteUserRequestSchema,
 } from '#validation/users.validation.js';
 import { formatValidationError } from '#utils/format.js';
 import {
   getAllUsers,
   getUserById,
   updateUser,
-  deleteUser
+  deleteUser,
 } from '#services/users.service.js';
 &nbsp;
 export const getUsers = <span class="fstat-no" title="function not covered" >async (req, res, next) =&gt; {</span>
@@ -449,7 +469,7 @@ export const getUsers = <span class="fstat-no" title="function not covered" >asy
 <span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
 <span class="cstat-no" title="statement not covered" >      message: 'Users retrieved successfully',</span>
 <span class="cstat-no" title="statement not covered" >      users,</span>
-<span class="cstat-no" title="statement not covered" >      count: users.length</span>
+<span class="cstat-no" title="statement not covered" >      count: users.length,</span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >  } catch (error) {</span>
 <span class="cstat-no" title="statement not covered" >    logger.error('Get users error', error);</span>
@@ -463,7 +483,7 @@ export const getUserByIdController = <span class="fstat-no" title="function not 
 <span class="cstat-no" title="statement not covered" >    if (!validationResult.success) {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(400).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'Validation failed',</span>
-<span class="cstat-no" title="statement not covered" >        details: formatValidationError(validationResult.error)</span>
+<span class="cstat-no" title="statement not covered" >        details: formatValidationError(validationResult.error),</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
@@ -474,14 +494,14 @@ export const getUserByIdController = <span class="fstat-no" title="function not 
 <span class="cstat-no" title="statement not covered" >    logger.info(`Retrieved user with ID: ${id}`);</span>
 <span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
 <span class="cstat-no" title="statement not covered" >      message: 'User retrieved successfully',</span>
-<span class="cstat-no" title="statement not covered" >      user</span>
+<span class="cstat-no" title="statement not covered" >      user,</span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >  } catch (error) {</span>
 <span class="cstat-no" title="statement not covered" >    logger.error('Get user by ID error', error);</span>
 <span class="cstat-no" title="statement not covered" >    if (error.message === 'User not found') {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(404).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'User not found',</span>
-<span class="cstat-no" title="statement not covered" >        message: 'The requested user does not exist'</span>
+<span class="cstat-no" title="statement not covered" >        message: 'The requested user does not exist',</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >    next(error);</span>
@@ -492,13 +512,13 @@ export const updateUserController = <span class="fstat-no" title="function not c
 <span class="cstat-no" title="statement not covered" >  try {</span>
 <span class="cstat-no" title="statement not covered" >    const validationResult = updateUserRequestSchema.safeParse({</span>
 <span class="cstat-no" title="statement not covered" >      params: req.params,</span>
-<span class="cstat-no" title="statement not covered" >      body: req.body</span>
+<span class="cstat-no" title="statement not covered" >      body: req.body,</span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    if (!validationResult.success) {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(400).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'Validation failed',</span>
-<span class="cstat-no" title="statement not covered" >        details: formatValidationError(validationResult.error)</span>
+<span class="cstat-no" title="statement not covered" >        details: formatValidationError(validationResult.error),</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
@@ -510,10 +530,12 @@ export const updateUserController = <span class="fstat-no" title="function not c
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    // Users can only update their own information</span>
 <span class="cstat-no" title="statement not covered" >    if (currentUser.id !== id &amp;&amp; currentUser.role !== 'admin') {</span>
-<span class="cstat-no" title="statement not covered" >      logger.warn(`Unauthorized update attempt by user ${currentUser.id} on user ${id}`);</span>
+<span class="cstat-no" title="statement not covered" >      logger.warn(</span>
+<span class="cstat-no" title="statement not covered" >        `Unauthorized update attempt by user ${currentUser.id} on user ${id}`</span>
+<span class="cstat-no" title="statement not covered" >      );</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(403).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'Forbidden',</span>
-<span class="cstat-no" title="statement not covered" >        message: 'You can only update your own information'</span>
+<span class="cstat-no" title="statement not covered" >        message: 'You can only update your own information',</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
@@ -522,7 +544,7 @@ export const updateUserController = <span class="fstat-no" title="function not c
 <span class="cstat-no" title="statement not covered" >      logger.warn(`Unauthorized role change attempt by user ${currentUser.id}`);</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(403).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'Forbidden',</span>
-<span class="cstat-no" title="statement not covered" >        message: 'Only administrators can change user roles'</span>
+<span class="cstat-no" title="statement not covered" >        message: 'Only administrators can change user roles',</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
@@ -531,23 +553,25 @@ export const updateUserController = <span class="fstat-no" title="function not c
 <span class="cstat-no" title="statement not covered" >      logger.warn(`Self role change attempt by user ${currentUser.id}`);</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(403).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'Forbidden',</span>
-<span class="cstat-no" title="statement not covered" >        message: 'Users cannot change their own role'</span>
+<span class="cstat-no" title="statement not covered" >        message: 'Users cannot change their own role',</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const updatedUser = await updateUser(id, updates);</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    logger.info(`User with ID ${id} updated successfully by user ${currentUser.id}`);</span>
+<span class="cstat-no" title="statement not covered" >    logger.info(</span>
+<span class="cstat-no" title="statement not covered" >      `User with ID ${id} updated successfully by user ${currentUser.id}`</span>
+<span class="cstat-no" title="statement not covered" >    );</span>
 <span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
 <span class="cstat-no" title="statement not covered" >      message: 'User updated successfully',</span>
-<span class="cstat-no" title="statement not covered" >      user: updatedUser</span>
+<span class="cstat-no" title="statement not covered" >      user: updatedUser,</span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >  } catch (error) {</span>
 <span class="cstat-no" title="statement not covered" >    logger.error('Update user error', error);</span>
 <span class="cstat-no" title="statement not covered" >    if (error.message === 'User not found') {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(404).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'User not found',</span>
-<span class="cstat-no" title="statement not covered" >        message: 'The user to update does not exist'</span>
+<span class="cstat-no" title="statement not covered" >        message: 'The user to update does not exist',</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >    next(error);</span>
@@ -556,11 +580,13 @@ export const updateUserController = <span class="fstat-no" title="function not c
 &nbsp;
 export const deleteUserController = <span class="fstat-no" title="function not covered" >async (req, res, next) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    const validationResult = deleteUserRequestSchema.safeParse({ params: req.params });</span>
+<span class="cstat-no" title="statement not covered" >    const validationResult = deleteUserRequestSchema.safeParse({</span>
+<span class="cstat-no" title="statement not covered" >      params: req.params,</span>
+<span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >    if (!validationResult.success) {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(400).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'Validation failed',</span>
-<span class="cstat-no" title="statement not covered" >        details: formatValidationError(validationResult.error)</span>
+<span class="cstat-no" title="statement not covered" >        details: formatValidationError(validationResult.error),</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
@@ -570,10 +596,12 @@ export const deleteUserController = <span class="fstat-no" title="function not c
 <span class="cstat-no" title="statement not covered" >    // Authorization checks</span>
 <span class="cstat-no" title="statement not covered" >    // Users can only delete their own account, admins can delete any account</span>
 <span class="cstat-no" title="statement not covered" >    if (currentUser.id !== id &amp;&amp; currentUser.role !== 'admin') {</span>
-<span class="cstat-no" title="statement not covered" >      logger.warn(`Unauthorized delete attempt by user ${currentUser.id} on user ${id}`);</span>
+<span class="cstat-no" title="statement not covered" >      logger.warn(</span>
+<span class="cstat-no" title="statement not covered" >        `Unauthorized delete attempt by user ${currentUser.id} on user ${id}`</span>
+<span class="cstat-no" title="statement not covered" >      );</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(403).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'Forbidden',</span>
-<span class="cstat-no" title="statement not covered" >        message: 'You can only delete your own account'</span>
+<span class="cstat-no" title="statement not covered" >        message: 'You can only delete your own account',</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
@@ -586,24 +614,26 @@ export const deleteUserController = <span class="fstat-no" title="function not c
 <span class="cstat-no" title="statement not covered" >        logger.warn(`Last admin deletion attempt by user ${currentUser.id}`);</span>
 <span class="cstat-no" title="statement not covered" >        return res.status(403).json({</span>
 <span class="cstat-no" title="statement not covered" >          error: 'Forbidden',</span>
-<span class="cstat-no" title="statement not covered" >          message: 'Cannot delete the last administrator account'</span>
+<span class="cstat-no" title="statement not covered" >          message: 'Cannot delete the last administrator account',</span>
 <span class="cstat-no" title="statement not covered" >        });</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const deletedUser = await deleteUser(id);</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    logger.info(`User with ID ${id} deleted successfully by user ${currentUser.id}`);</span>
+<span class="cstat-no" title="statement not covered" >    logger.info(</span>
+<span class="cstat-no" title="statement not covered" >      `User with ID ${id} deleted successfully by user ${currentUser.id}`</span>
+<span class="cstat-no" title="statement not covered" >    );</span>
 <span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
 <span class="cstat-no" title="statement not covered" >      message: 'User deleted successfully',</span>
-<span class="cstat-no" title="statement not covered" >      user: deletedUser</span>
+<span class="cstat-no" title="statement not covered" >      user: deletedUser,</span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >  } catch (error) {</span>
 <span class="cstat-no" title="statement not covered" >    logger.error('Delete user error', error);</span>
 <span class="cstat-no" title="statement not covered" >    if (error.message === 'User not found') {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(404).json({</span>
 <span class="cstat-no" title="statement not covered" >        error: 'User not found',</span>
-<span class="cstat-no" title="statement not covered" >        message: 'The user to delete does not exist'</span>
+<span class="cstat-no" title="statement not covered" >        message: 'The user to delete does not exist',</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >    next(error);</span>
@@ -616,7 +646,7 @@ export const deleteUserController = <span class="fstat-no" title="function not c
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-10-08T09:56:46.243Z
+                at 2025-10-08T10:04:48.016Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

@@ -2,14 +2,14 @@ import logger from '#config/logger.js';
 import {
   getUserSchema,
   updateUserRequestSchema,
-  deleteUserRequestSchema
+  deleteUserRequestSchema,
 } from '#validation/users.validation.js';
 import { formatValidationError } from '#utils/format.js';
 import {
   getAllUsers,
   getUserById,
   updateUser,
-  deleteUser
+  deleteUser,
 } from '#services/users.service.js';
 
 export const getUsers = async (req, res, next) => {
@@ -20,7 +20,7 @@ export const getUsers = async (req, res, next) => {
     res.status(200).json({
       message: 'Users retrieved successfully',
       users,
-      count: users.length
+      count: users.length,
     });
   } catch (error) {
     logger.error('Get users error', error);
@@ -34,7 +34,7 @@ export const getUserByIdController = async (req, res, next) => {
     if (!validationResult.success) {
       return res.status(400).json({
         error: 'Validation failed',
-        details: formatValidationError(validationResult.error)
+        details: formatValidationError(validationResult.error),
       });
     }
 
@@ -45,14 +45,14 @@ export const getUserByIdController = async (req, res, next) => {
     logger.info(`Retrieved user with ID: ${id}`);
     res.status(200).json({
       message: 'User retrieved successfully',
-      user
+      user,
     });
   } catch (error) {
     logger.error('Get user by ID error', error);
     if (error.message === 'User not found') {
       return res.status(404).json({
         error: 'User not found',
-        message: 'The requested user does not exist'
+        message: 'The requested user does not exist',
       });
     }
     next(error);
@@ -63,13 +63,13 @@ export const updateUserController = async (req, res, next) => {
   try {
     const validationResult = updateUserRequestSchema.safeParse({
       params: req.params,
-      body: req.body
+      body: req.body,
     });
 
     if (!validationResult.success) {
       return res.status(400).json({
         error: 'Validation failed',
-        details: formatValidationError(validationResult.error)
+        details: formatValidationError(validationResult.error),
       });
     }
 
@@ -81,10 +81,12 @@ export const updateUserController = async (req, res, next) => {
 
     // Users can only update their own information
     if (currentUser.id !== id && currentUser.role !== 'admin') {
-      logger.warn(`Unauthorized update attempt by user ${currentUser.id} on user ${id}`);
+      logger.warn(
+        `Unauthorized update attempt by user ${currentUser.id} on user ${id}`
+      );
       return res.status(403).json({
         error: 'Forbidden',
-        message: 'You can only update your own information'
+        message: 'You can only update your own information',
       });
     }
 
@@ -93,7 +95,7 @@ export const updateUserController = async (req, res, next) => {
       logger.warn(`Unauthorized role change attempt by user ${currentUser.id}`);
       return res.status(403).json({
         error: 'Forbidden',
-        message: 'Only administrators can change user roles'
+        message: 'Only administrators can change user roles',
       });
     }
 
@@ -102,23 +104,25 @@ export const updateUserController = async (req, res, next) => {
       logger.warn(`Self role change attempt by user ${currentUser.id}`);
       return res.status(403).json({
         error: 'Forbidden',
-        message: 'Users cannot change their own role'
+        message: 'Users cannot change their own role',
       });
     }
 
     const updatedUser = await updateUser(id, updates);
 
-    logger.info(`User with ID ${id} updated successfully by user ${currentUser.id}`);
+    logger.info(
+      `User with ID ${id} updated successfully by user ${currentUser.id}`
+    );
     res.status(200).json({
       message: 'User updated successfully',
-      user: updatedUser
+      user: updatedUser,
     });
   } catch (error) {
     logger.error('Update user error', error);
     if (error.message === 'User not found') {
       return res.status(404).json({
         error: 'User not found',
-        message: 'The user to update does not exist'
+        message: 'The user to update does not exist',
       });
     }
     next(error);
@@ -127,11 +131,13 @@ export const updateUserController = async (req, res, next) => {
 
 export const deleteUserController = async (req, res, next) => {
   try {
-    const validationResult = deleteUserRequestSchema.safeParse({ params: req.params });
+    const validationResult = deleteUserRequestSchema.safeParse({
+      params: req.params,
+    });
     if (!validationResult.success) {
       return res.status(400).json({
         error: 'Validation failed',
-        details: formatValidationError(validationResult.error)
+        details: formatValidationError(validationResult.error),
       });
     }
 
@@ -141,10 +147,12 @@ export const deleteUserController = async (req, res, next) => {
     // Authorization checks
     // Users can only delete their own account, admins can delete any account
     if (currentUser.id !== id && currentUser.role !== 'admin') {
-      logger.warn(`Unauthorized delete attempt by user ${currentUser.id} on user ${id}`);
+      logger.warn(
+        `Unauthorized delete attempt by user ${currentUser.id} on user ${id}`
+      );
       return res.status(403).json({
         error: 'Forbidden',
-        message: 'You can only delete your own account'
+        message: 'You can only delete your own account',
       });
     }
 
@@ -157,24 +165,26 @@ export const deleteUserController = async (req, res, next) => {
         logger.warn(`Last admin deletion attempt by user ${currentUser.id}`);
         return res.status(403).json({
           error: 'Forbidden',
-          message: 'Cannot delete the last administrator account'
+          message: 'Cannot delete the last administrator account',
         });
       }
     }
 
     const deletedUser = await deleteUser(id);
 
-    logger.info(`User with ID ${id} deleted successfully by user ${currentUser.id}`);
+    logger.info(
+      `User with ID ${id} deleted successfully by user ${currentUser.id}`
+    );
     res.status(200).json({
       message: 'User deleted successfully',
-      user: deletedUser
+      user: deletedUser,
     });
   } catch (error) {
     logger.error('Delete user error', error);
     if (error.message === 'User not found') {
       return res.status(404).json({
         error: 'User not found',
-        message: 'The user to delete does not exist'
+        message: 'The user to delete does not exist',
       });
     }
     next(error);

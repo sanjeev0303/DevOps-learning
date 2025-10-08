@@ -22,9 +22,13 @@ export const verifyPassword = async (plainPassword, hashedPassword) => {
   }
 };
 
-export const findUserByEmail = async (email) => {
+export const findUserByEmail = async email => {
   try {
-    const [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);
+    const [user] = await db
+      .select()
+      .from(users)
+      .where(eq(users.email, email))
+      .limit(1);
     return user || null;
   } catch (error) {
     logger.error(`Error finding user by email: ${error}`);
@@ -32,8 +36,7 @@ export const findUserByEmail = async (email) => {
   }
 };
 
-
-export const createUser = async ({ name, email, password, role = 'user'}) => {
+export const createUser = async ({ name, email, password, role = 'user' }) => {
   try {
     const existingUser = await findUserByEmail(email);
     if (existingUser) throw new Error('User already exists');
@@ -46,14 +49,14 @@ export const createUser = async ({ name, email, password, role = 'user'}) => {
         name,
         email,
         password: password_hash,
-        role
+        role,
       })
       .returning({
         id: users.id,
         name: users.name,
         email: users.email,
         role: users.role,
-        created_at: users.created_at
+        created_at: users.created_at,
       });
 
     logger.info(`User ${newUser.email} created successfully`);

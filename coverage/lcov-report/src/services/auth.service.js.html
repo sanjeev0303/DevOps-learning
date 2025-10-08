@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">18.39% </span>
+                <span class="strong">16.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>16/87</span>
+                <span class='fraction'>15/90</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">18.39% </span>
+                <span class="strong">16.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>16/87</span>
+                <span class='fraction'>15/90</span>
             </div>
         
             
@@ -150,7 +150,10 @@
 <a name='L85'></a><a href='#L85'>85</a>
 <a name='L86'></a><a href='#L86'>86</a>
 <a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -183,7 +186,10 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -261,9 +267,13 @@ export const verifyPassword = <span class="fstat-no" title="function not covered
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;
-export const findUserByEmail = <span class="fstat-no" title="function not covered" >async (email) =&gt; {</span>
+export const findUserByEmail = <span class="fstat-no" title="function not covered" >async email =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    const [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);</span>
+<span class="cstat-no" title="statement not covered" >    const [user] = await db</span>
+<span class="cstat-no" title="statement not covered" >      .select()</span>
+<span class="cstat-no" title="statement not covered" >      .from(users)</span>
+<span class="cstat-no" title="statement not covered" >      .where(eq(users.email, email))</span>
+<span class="cstat-no" title="statement not covered" >      .limit(1);</span>
 <span class="cstat-no" title="statement not covered" >    return user || null;</span>
 <span class="cstat-no" title="statement not covered" >  } catch (error) {</span>
 <span class="cstat-no" title="statement not covered" >    logger.error(`Error finding user by email: ${error}`);</span>
@@ -271,8 +281,7 @@ export const findUserByEmail = <span class="fstat-no" title="function not covere
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;
-&nbsp;
-export const createUser = <span class="fstat-no" title="function not covered" >async ({ name, email, password, role = 'user'}) =&gt; {</span>
+export const createUser = <span class="fstat-no" title="function not covered" >async ({ name, email, password, role = 'user' }) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  try {</span>
 <span class="cstat-no" title="statement not covered" >    const existingUser = await findUserByEmail(email);</span>
 <span class="cstat-no" title="statement not covered" >    if (existingUser) throw new Error('User already exists');</span>
@@ -285,14 +294,14 @@ export const createUser = <span class="fstat-no" title="function not covered" >a
 <span class="cstat-no" title="statement not covered" >        name,</span>
 <span class="cstat-no" title="statement not covered" >        email,</span>
 <span class="cstat-no" title="statement not covered" >        password: password_hash,</span>
-<span class="cstat-no" title="statement not covered" >        role</span>
+<span class="cstat-no" title="statement not covered" >        role,</span>
 <span class="cstat-no" title="statement not covered" >      })</span>
 <span class="cstat-no" title="statement not covered" >      .returning({</span>
 <span class="cstat-no" title="statement not covered" >        id: users.id,</span>
 <span class="cstat-no" title="statement not covered" >        name: users.name,</span>
 <span class="cstat-no" title="statement not covered" >        email: users.email,</span>
 <span class="cstat-no" title="statement not covered" >        role: users.role,</span>
-<span class="cstat-no" title="statement not covered" >        created_at: users.created_at</span>
+<span class="cstat-no" title="statement not covered" >        created_at: users.created_at,</span>
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    logger.info(`User ${newUser.email} created successfully`);</span>
@@ -331,7 +340,7 @@ export const authenticateUser = <span class="fstat-no" title="function not cover
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-10-08T09:56:46.243Z
+                at 2025-10-08T10:04:48.016Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

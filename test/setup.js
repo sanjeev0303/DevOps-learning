@@ -12,6 +12,9 @@ process.env.NODE_ENV = 'test';
 if (!process.env.DATABASE_URL) {
   // Use a test database URL or the same as development for now
   // In a real-world scenario, you'd want a separate test database
-  console.warn('No DATABASE_URL found in environment, using development database for tests');
-  process.env.DATABASE_URL = process.env.DATABASE_URL || 'postgresql://test:test@localhost:5432/test_db';
+  console.warn(
+    'No DATABASE_URL found in environment, using development database for tests'
+  );
+  process.env.DATABASE_URL =
+    process.env.DATABASE_URL || 'postgresql://test:test@localhost:5432/test_db';
 }

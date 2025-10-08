@@ -22,12 +22,14 @@ A Node.js Express application with authentication, rate limiting, and database i
 ### Development Setup (with Neon Local)
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/sanjeev0303/DevOps-learning.git
    cd DevOps-learning
    ```
 
 2. **Configure Neon API credentials**
+
    ```bash
    # Copy the example environment file
    cp .env.example .env.development
@@ -39,6 +41,7 @@ A Node.js Express application with authentication, rate limiting, and database i
    ```
 
 3. **Start the development environment**
+
    ```bash
    npm run dev:docker
    ```
@@ -62,6 +65,7 @@ A Node.js Express application with authentication, rate limiting, and database i
 ### Production Setup (with Neon Cloud)
 
 1. **Set environment variables**
+
    ```bash
    export DATABASE_URL="your-neon-cloud-database-url"
    export ARCJET_KEY="your-arcjet-key"
@@ -69,6 +73,7 @@ A Node.js Express application with authentication, rate limiting, and database i
    ```
 
 2. **Start production environment**
+
    ```bash
    npm run docker:prod
    ```
@@ -104,6 +109,7 @@ DevOps-learning/
 ## 🔧 Environment Configuration
 
 ### Development (.env.development)
+
 - Uses Neon Local proxy at `postgres://neon:npg@neon-local:5432/neondb`
 - Requires Neon API credentials for branch management
 - Debug logging enabled
@@ -111,6 +117,7 @@ DevOps-learning/
 - Automatic ephemeral branch creation/cleanup
 
 ### Production (.env.production)
+
 - Uses Neon Cloud Database URL
 - Info-level logging
 - Production security configuration
@@ -121,6 +128,7 @@ DevOps-learning/
 ### Development with Neon Local
 
 Neon Local automatically provides:
+
 - Ephemeral database branches for testing
 - Local proxy to your Neon Cloud database
 - Branch management for feature development
@@ -128,6 +136,7 @@ Neon Local automatically provides:
 - Connection to real Neon data through local interface
 
 **How it works:**
+
 1. Neon Local creates an ephemeral branch from your parent branch
 2. Your app connects to `localhost:5432` but data flows to/from Neon Cloud
 3. When the container stops, the ephemeral branch is automatically deleted
@@ -136,6 +145,7 @@ Neon Local automatically provides:
 ### Production with Neon Cloud
 
 Production uses:
+
 - Managed Neon Cloud PostgreSQL
 - Automatic backups and point-in-time recovery
 - Connection pooling
@@ -157,11 +167,13 @@ docker-compose -f docker-compose.prod.yml exec app npm run db:migrate
 ## 🔒 API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/sign-up` - User registration
 - `POST /api/auth/sign-in` - User login
 - `POST /api/auth/sign-out` - User logout
 
 ### Health & Monitoring
+
 - `GET /health` - Application health check
 - `GET /` - Welcome message
 
@@ -226,11 +238,13 @@ npm run format             # Format code with Prettier
 ## 🚀 Deployment
 
 ### Local Development
+
 1. Ensure Docker is running
 2. Run `npm run docker:dev`
 3. Access application at http://localhost:5000
 
 ### Production Deployment
+
 1. Set required environment variables
 2. Run `npm run docker:prod`
 3. Configure reverse proxy (nginx included)
@@ -290,6 +304,7 @@ DOCKER_PASSWORD     # Your Docker Hub password or access token
 ```
 
 Optionally for tests:
+
 ```
 TEST_DATABASE_URL   # Test database connection string
 ```
@@ -297,6 +312,7 @@ TEST_DATABASE_URL   # Test database connection string
 ### 🏷️ Docker Image Tags
 
 The Docker workflow creates the following tags:
+
 - `latest` (for main branch)
 - `main-<commit-sha>` (branch with commit SHA)
 - `prod-YYYYMMDD-HHmmss` (production timestamp)

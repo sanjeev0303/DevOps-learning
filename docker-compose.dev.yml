@@ -4,7 +4,7 @@ services:
     image: neondatabase/neon_local:latest
     container_name: devops-neon-local-dev
     ports:
-      - "5432:5432"
+      - '5432:5432'
     env_file:
       - ./.env.development
     networks:
@@ -18,7 +18,7 @@ services:
       dockerfile: Dockerfile
     container_name: devops-app-dev
     ports:
-      - "5000:5000"
+      - '5000:5000'
     env_file:
       - .env.development
     volumes:

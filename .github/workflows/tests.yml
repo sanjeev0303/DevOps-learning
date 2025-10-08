@@ -2,9 +2,9 @@ name: Tests
 
 on:
   push:
-    branches: [ main, staging ]
+    branches: [main, staging]
   pull_request:
-    branches: [ main, staging ]
+    branches: [main, staging]
 
 jobs:
   test:
@@ -20,70 +20,70 @@ jobs:
       DATABASE_URL: ${{ secrets.TEST_DATABASE_URL }}
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run tests
-      id: test-run
-      run: |
-        echo "::notice::Running test suite..."
-        if npm test; then
-          echo "test_status=success" >> $GITHUB_OUTPUT
-          echo "::notice::✅ All tests passed successfully!"
-        else
-          echo "test_status=failure" >> $GITHUB_OUTPUT
-          echo "::error::❌ Some tests failed. Please check the test output above."
-          exit 1
-        fi
+      - name: Run tests
+        id: test-run
+        run: |
+          echo "::notice::Running test suite..."
+          if npm test; then
+            echo "test_status=success" >> $GITHUB_OUTPUT
+            echo "::notice::✅ All tests passed successfully!"
+          else
+            echo "test_status=failure" >> $GITHUB_OUTPUT
+            echo "::error::❌ Some tests failed. Please check the test output above."
+            exit 1
+          fi
 
-    - name: Upload coverage reports
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: coverage-reports
-        path: coverage/
-        retention-days: 30
-        if-no-files-found: warn
+      - name: Upload coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-reports
+          path: coverage/
+          retention-days: 30
+          if-no-files-found: warn
 
-    - name: Generate test summary
-      if: always()
-      run: |
-        echo "## 🧪 Test Results" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-
-        if [ "${{ steps.test-run.outputs.test_status }}" = "success" ]; then
-          echo "✅ **All tests passed successfully!**" >> $GITHUB_STEP_SUMMARY
+      - name: Generate test summary
+        if: always()
+        run: |
+          echo "## 🧪 Test Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Coverage Information" >> $GITHUB_STEP_SUMMARY
-          echo "Coverage reports have been uploaded as artifacts and are available for 30 days." >> $GITHUB_STEP_SUMMARY
-        else
-          echo "❌ **Some tests failed.**" >> $GITHUB_STEP_SUMMARY
+
+          if [ "${{ steps.test-run.outputs.test_status }}" = "success" ]; then
+            echo "✅ **All tests passed successfully!**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Coverage Information" >> $GITHUB_STEP_SUMMARY
+            echo "Coverage reports have been uploaded as artifacts and are available for 30 days." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Some tests failed.**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review the test output above for specific failure details" >> $GITHUB_STEP_SUMMARY
+            echo "2. Fix the failing tests locally" >> $GITHUB_STEP_SUMMARY
+            echo "3. Run \`npm test\` locally to verify fixes" >> $GITHUB_STEP_SUMMARY
+            echo "4. Push your changes to trigger a new test run" >> $GITHUB_STEP_SUMMARY
+          fi
+
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
-          echo "1. Review the test output above for specific failure details" >> $GITHUB_STEP_SUMMARY
-          echo "2. Fix the failing tests locally" >> $GITHUB_STEP_SUMMARY
-          echo "3. Run \`npm test\` locally to verify fixes" >> $GITHUB_STEP_SUMMARY
-          echo "4. Push your changes to trigger a new test run" >> $GITHUB_STEP_SUMMARY
-        fi
+          echo "### Test Environment" >> $GITHUB_STEP_SUMMARY
+          echo "- Node.js: ${{ matrix.node-version }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Environment: ${{ env.NODE_ENV }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Test Framework: Jest with experimental VM modules" >> $GITHUB_STEP_SUMMARY
 
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "### Test Environment" >> $GITHUB_STEP_SUMMARY
-        echo "- Node.js: ${{ matrix.node-version }}" >> $GITHUB_STEP_SUMMARY
-        echo "- Environment: ${{ env.NODE_ENV }}" >> $GITHUB_STEP_SUMMARY
-        echo "- Test Framework: Jest with experimental VM modules" >> $GITHUB_STEP_SUMMARY
-
-    - name: Annotate test failures
-      if: failure()
-      run: |
-        echo "::error::Test suite failed. Please review the test output and fix any failing tests."
-        echo "::notice::Coverage reports are still available as artifacts even when tests fail."
-        echo "::notice::You can download the coverage reports to analyze test coverage locally."
+      - name: Annotate test failures
+        if: failure()
+        run: |
+          echo "::error::Test suite failed. Please review the test output and fix any failing tests."
+          echo "::notice::Coverage reports are still available as artifacts even when tests fail."
+          echo "::notice::You can download the coverage reports to analyze test coverage locally."

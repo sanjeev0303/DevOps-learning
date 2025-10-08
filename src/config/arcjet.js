@@ -17,15 +17,15 @@ const aj = arcjet({
         'INSOMNIA',
         'CURL',
         // Allow requests without User-Agent (health checks, internal requests)
-        'NO_USER_AGENT'
+        'NO_USER_AGENT',
       ],
     }),
     slidingWindow({
       mode: 'LIVE',
       interval: '2s',
       max: 5,
-    })
-  ]
+    }),
+  ],
 });
 
 export default aj;

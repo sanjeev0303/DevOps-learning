@@ -23,7 +23,7 @@ export const getAllUsers = async () => {
         email: users.email,
         role: users.role,
         created_at: users.created_at,
-        updated_at: users.updated_at
+        updated_at: users.updated_at,
       })
       .from(users);
 
@@ -35,7 +35,7 @@ export const getAllUsers = async () => {
   }
 };
 
-export const getUserById = async (id) => {
+export const getUserById = async id => {
   try {
     const [user] = await db
       .select({
@@ -44,7 +44,7 @@ export const getUserById = async (id) => {
         email: users.email,
         role: users.role,
         created_at: users.created_at,
-        updated_at: users.updated_at
+        updated_at: users.updated_at,
       })
       .from(users)
       .where(eq(users.id, id))
@@ -92,7 +92,7 @@ export const updateUser = async (id, updates) => {
         email: users.email,
         role: users.role,
         created_at: users.created_at,
-        updated_at: users.updated_at
+        updated_at: users.updated_at,
       });
 
     if (!updatedUser) {
@@ -102,7 +102,10 @@ export const updateUser = async (id, updates) => {
     logger.info(`User with ID ${id} updated successfully`);
     return updatedUser;
   } catch (error) {
-    if (error.message === 'User not found' || error.message === 'Failed to update user') {
+    if (
+      error.message === 'User not found' ||
+      error.message === 'Failed to update user'
+    ) {
       throw error;
     }
     logger.error(`Error updating user with ID ${id}: ${error}`);
@@ -110,7 +113,7 @@ export const updateUser = async (id, updates) => {
   }
 };
 
-export const deleteUser = async (id) => {
+export const deleteUser = async id => {
   try {
     // First check if user exists (will throw error if not found)
     // eslint-disable-next-line no-unused-vars
@@ -124,7 +127,7 @@ export const deleteUser = async (id) => {
         id: users.id,
         name: users.name,
         email: users.email,
-        role: users.role
+        role: users.role,
       });
 
     if (!deletedUser) {
@@ -134,7 +137,10 @@ export const deleteUser = async (id) => {
     logger.info(`User with ID ${id} deleted successfully`);
     return deletedUser;
   } catch (error) {
-    if (error.message === 'User not found' || error.message === 'Failed to delete user') {
+    if (
+      error.message === 'User not found' ||
+      error.message === 'Failed to delete user'
+    ) {
       throw error;
     }
     logger.error(`Error deleting user with ID ${id}: ${error}`);

@@ -15,14 +15,15 @@ export const authenticate = async (req, res, next) => {
     }
 
     if (!token) {
-      return res.status(401).json({ error: 'Access denied. No token provided.' });
+      return res
+        .status(401)
+        .json({ error: 'Access denied. No token provided.' });
     }
 
     // Verify token
     const decoded = jwttoken.verify(token);
     req.user = decoded; // Attach user info to request object
     next();
-
   } catch (error) {
     logger.error('Authentication middleware error:', error);
     return res.status(401).json({ error: 'Invalid token.' });
@@ -32,11 +33,15 @@ export const authenticate = async (req, res, next) => {
 export const authorize = (...roles) => {
   return (req, res, next) => {
     if (!req.user) {
-      return res.status(401).json({ error: 'Access denied. Please authenticate first.' });
+      return res
+        .status(401)
+        .json({ error: 'Access denied. Please authenticate first.' });
     }
 
     if (roles.length && !roles.includes(req.user.role)) {
-      return res.status(403).json({ error: 'Access denied. Insufficient privileges.' });
+      return res
+        .status(403)
+        .json({ error: 'Access denied. Insufficient privileges.' });
     }
 
     next();
