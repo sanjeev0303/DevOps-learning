@@ -7,6 +7,16 @@ export const securityMiddleware = async (req, res, next) => {
         const role = req.user?.role || "guest"
         const userAgent = req.get("User-Agent") || ""
 
+        // Skip security checks for requests without User-Agent (internal/health checks)
+        if (!userAgent || userAgent === "") {
+            logger.info("Request without User-Agent header allowed (likely internal/health check)", {
+                ip: req.ip,
+                path: req.path,
+                method: req.method
+            });
+            return next();
+        }
+
         // Allow development tools in development mode
         if (process.env.NODE_ENV === 'development') {
             const isDevelopmentTool = userAgent.includes('PostmanRuntime') ||

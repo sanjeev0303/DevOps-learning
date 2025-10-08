@@ -7,7 +7,7 @@ const aj = arcjet({
     rules: [
        shield({ mode: 'LIVE' }),
        detectBot({
-        mode: "LIVE",
+        mode: process.env.NODE_ENV === 'development' ? 'DRY_RUN' : 'LIVE',
         allow: [
             'CATEGORY:SEARCH_ENGINE',
             'CATEGORY:PREVIEW',
@@ -15,7 +15,9 @@ const aj = arcjet({
             // Allow specific development tools
             'POSTMAN',
             'INSOMNIA',
-            'CURL'
+            'CURL',
+            // Allow requests without User-Agent (health checks, internal requests)
+            'NO_USER_AGENT'
         ],
        }),
        slidingWindow({
