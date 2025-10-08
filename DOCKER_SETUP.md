@@ -34,9 +34,9 @@ This guide explains how to set up Docker Hub credentials for the CI/CD pipeline 
 
 ### Required Secrets
 
-| Secret Name | Value | Description |
-|------------|-------|-------------|
-| `DOCKER_USERNAME` | Your Docker Hub username | Used for authentication |
+| Secret Name       | Value                        | Description                                 |
+| ----------------- | ---------------------------- | ------------------------------------------- |
+| `DOCKER_USERNAME` | Your Docker Hub username     | Used for authentication                     |
 | `DOCKER_PASSWORD` | Your Docker Hub access token | Used for authentication (NOT your password) |
 
 ### Adding Each Secret
@@ -129,6 +129,7 @@ If you encounter issues:
 4. Verify all secrets are configured correctly in GitHub
 
 For more information, see:
+
 - [Docker Hub Documentation](https://docs.docker.com/docker-hub/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Docker Build and Push Action](https://github.com/docker/build-push-action)
