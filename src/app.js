@@ -6,6 +6,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 
 import authRouter from '#routes/auth.routes.js';
+import usersRouter from '#routes/users.routes.js';
 import { securityMiddleware } from '#middleware/security.middleware.js';
 
 const app = express();
@@ -43,5 +44,10 @@ app.get('/api', (req, res) => {
 });
 
 app.use('/api/auth', authRouter);
+app.use('/api/users', usersRouter);
+
+app.use((req, res) => {
+    res.status(404).json({ error: "route not found" })
+})
 
 export default app;

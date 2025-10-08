@@ -262,3 +262,120 @@
 {"ip":"::ffff:192.168.65.1","level":"info","message":"Development tool request allowed","path":"/api/auth/sign-in","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
 {"level":"info","message":"User signed in successfully: rose@gmail.com","service":"DevOps learning"}
 {"level":"info","message":"::ffff:192.168.65.1 - - [08/Oct/2025:08:26:57 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 310 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:39:46 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:40:16 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:40:46 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved 2 users","service":"DevOps learning"}
+{"level":"info","message":"Retrieved 2 users","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:40:52 +0000] \"GET /api/users/ HTTP/1.1\" 200 353 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:41:16 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:41:46 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved user with ID: 1","service":"DevOps learning"}
+{"level":"info","message":"Retrieved user with ID: 1","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:41:51 +0000] \"GET /api/users/1 HTTP/1.1\" 200 196 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/3","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/3","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:41:57 +0000] \"GET /api/users/3 HTTP/1.1\" 401 45 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/2","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/2","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:42:01 +0000] \"GET /api/users/2 HTTP/1.1\" 401 45 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:42:04 +0000] \"GET /api/users/1 HTTP/1.1\" 401 45 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:42:16 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:42:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/auth/sign-in","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"error","message":"Error authenticating user: Error: Invalid credentials","service":"DevOps learning"}
+{"level":"error","message":"Signin error Invalid credentials","service":"DevOps learning","stack":"Error: Invalid credentials\n    at authenticateUser (file:///app/src/services/auth.service.js:71:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signin (file:///app/src/controllers/auth.controller.js:61:22)"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:43:06 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:43:17 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/auth/sign-up","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"User rose@gmail.com created successfully","service":"DevOps learning"}
+{"level":"info","message":"User registered successfully: rose@gmail.com","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:43:19 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 112 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/auth/sign-in","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"User signed in successfully: rose@gmail.com","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:43:22 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 313 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:43:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved 3 users","service":"DevOps learning"}
+{"level":"info","message":"Retrieved 3 users","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:43:51 +0000] \"GET /api/users/ HTTP/1.1\" 200 496 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved user with ID: 1","service":"DevOps learning"}
+{"level":"info","message":"Retrieved user with ID: 1","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:44:00 +0000] \"GET /api/users/1 HTTP/1.1\" 200 196 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:44:17 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:44:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:45:17 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:45:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved user with ID: 1","service":"DevOps learning"}
+{"level":"info","message":"Retrieved user with ID: 1","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:45:52 +0000] \"GET /api/users/1 HTTP/1.1\" 200 196 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/1","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved user with ID: 1","service":"DevOps learning"}
+{"level":"info","message":"User with ID 1 updated successfully","service":"DevOps learning"}
+{"level":"info","message":"User with ID 1 updated successfully by user 3","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:46:03 +0000] \"PUT /api/users/1 HTTP/1.1\" 200 190 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:46:17 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:46:48 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/2","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/2","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved 3 users","service":"DevOps learning"}
+{"level":"info","message":"Retrieved user with ID: 2","service":"DevOps learning"}
+{"level":"info","message":"User with ID 2 deleted successfully","service":"DevOps learning"}
+{"level":"info","message":"User with ID 2 deleted successfully by user 3","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:47:02 +0000] \"DELETE /api/users/2 HTTP/1.1\" 200 109 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/api/users/","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.23.0.1","level":"info","message":"Development tool request allowed","path":"/","service":"DevOps learning","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Retrieved 2 users","service":"DevOps learning"}
+{"level":"info","message":"Retrieved 2 users","service":"DevOps learning"}
+{"level":"info","message":"::ffff:172.23.0.1 - - [08/Oct/2025:08:47:10 +0000] \"GET /api/users/ HTTP/1.1\" 200 349 \"-\" \"PostmanRuntime/7.39.1\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:47:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:47:48 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:48:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:48:48 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:49:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::1 - - [08/Oct/2025:08:49:48 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Oct/2025:09:25:50 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/api","service":"DevOps learning"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Oct/2025:09:25:50 +0000] \"GET /api HTTP/1.1\" 200 36 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/nonexistent","service":"DevOps learning"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Oct/2025:09:25:50 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/health","service":"DevOps learning"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Oct/2025:09:26:40 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/api","service":"DevOps learning"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Oct/2025:09:26:40 +0000] \"GET /api HTTP/1.1\" 200 36 \"-\" \"-\"","service":"DevOps learning"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"Request without User-Agent header allowed (likely internal/health check)","method":"GET","path":"/nonexistent","service":"DevOps learning"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Oct/2025:09:26:40 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"DevOps learning"}
