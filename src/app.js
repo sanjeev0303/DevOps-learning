@@ -11,7 +11,7 @@ import { securityMiddleware } from '#middleware/security.middleware.js';
 
 const app = express();
 
-app.use(securityMiddleware)
+app.use(securityMiddleware);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -47,7 +47,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/users', usersRouter);
 
 app.use((req, res) => {
-    res.status(404).json({ error: "route not found" })
-})
+  res.status(404).json({ error: 'route not found' });
+});
 
 export default app;

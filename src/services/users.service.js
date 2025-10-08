@@ -1,7 +1,7 @@
 import logger from '#config/logger.js';
-import db from "#config/database.js"
+import db from '#config/database.js';
 import { eq } from 'drizzle-orm';
-import { users } from "#models/user.model.js"
+import { users } from '#models/user.model.js';
 import bcrypt from 'bcrypt';
 
 // Helper function to hash password
@@ -68,7 +68,7 @@ export const getUserById = async (id) => {
 export const updateUser = async (id, updates) => {
   try {
     // First check if user exists
-    const existingUser = await getUserById(id);
+    // const existingUser = await getUserById(id);
 
     // Prepare update object
     const updateData = { ...updates };
@@ -112,7 +112,8 @@ export const updateUser = async (id, updates) => {
 
 export const deleteUser = async (id) => {
   try {
-    // First check if user exists
+    // First check if user exists (will throw error if not found)
+    // eslint-disable-next-line no-unused-vars
     const existingUser = await getUserById(id);
 
     // Delete user
